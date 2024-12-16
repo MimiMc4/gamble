@@ -5,8 +5,6 @@
 using namespace std;
 
 const string symbols[] = {"\033[0;31m♥\033[0;0m","♠","♣","\033[0;31m♦\033[0;0m","❼"};
-const string slot1 = "--(Gamble!)--\n\\ [";
-const string slot2 = "] /\n/===========\\";
 
 
 void printMsg(string s1, string s2, string s3){

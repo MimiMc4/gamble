@@ -68,36 +68,8 @@ int main(){
         nanosleep(&t,NULL);
     }
 
-    for(int i = 0; i < 4; i++){
-        cout << "| [" + s1 + "][" + s2 + "][" + s3 + "] |";
-        flush(cout);
-
-        cout << "\r";
-
-        nanosleep(&t,NULL);
-        nanosleep(&t,NULL);
-
-        if(i != 3){
-            cout << "| [ ][ ][ ] |"  ;
-            flush(cout);
-
-            cout << "\r";
-
-            nanosleep(&t,NULL);
-            nanosleep(&t,NULL);
-        }
-    }
     printMsg(s1,s2,s3); 
     flush(cout);
-
-    nanosleep(&t,NULL);
-    nanosleep(&t,NULL);
-    nanosleep(&t,NULL);
-    nanosleep(&t,NULL);
-    nanosleep(&t,NULL);
-    nanosleep(&t,NULL);
-    nanosleep(&t,NULL);
-    nanosleep(&t,NULL);
 
     cout << "\n\033[0;0m";
 }
